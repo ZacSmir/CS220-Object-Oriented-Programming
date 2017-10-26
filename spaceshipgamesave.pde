@@ -12,14 +12,25 @@ void draw() {
         background(0,0,0);
         spaceShip.update();
         spaceShip.display();
+        for(Projectile projectiles: projectile) {
+        projectiles.update();
+        projectiles.display();
+        }
         
 }
 
 public void keyPressed() {
   spaceShip.spaceShipKeyPress();
-  
+  if (keyCode == SHIFT) {
+  projectile.add(new Projectile_Good(spaceShip.x, spaceShip.y, 5));
+  }
 }
 
 public void keyReleased() {
   spaceShip.spaceShipKeyRelease();
+}
+
+public void badProjectile() {
+
+
 }
