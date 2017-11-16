@@ -2,7 +2,7 @@ class FlittingBird extends Bird {
   PImage bird2;
 
   public FlittingBird() {
-  bird2 = loadImage("bird2.png");
+    bird2 = loadImage("bird2.png");
   }
  
   

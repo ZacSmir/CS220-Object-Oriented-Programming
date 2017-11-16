@@ -1,4 +1,4 @@
-public class Bird {
+abstract class Bird {
   float x;
   float y;
   float xSpeed;
@@ -19,10 +19,8 @@ public class Bird {
     this.fillColor = color(random(0,255), random(0,255), random(0,255));
   }
   
-  void move() {
+   abstract void move();
   
-  }
-  void display() {
   
-  }
+   abstract void display();
 }
